@@ -1,0 +1,39 @@
+#navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #465f70;
+  }
+  
+  nav {
+    position: sticky;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    display: inline-flex;
+    width: 80px;
+    padding: 10px 3%;
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  .nav-item:hover {
+    background-color: rgb(49, 66, 80);
+    padding: 10px 4%;
+  }
+  
+  .nav-item a {
+    font-size: 1.2rem;
+    color: rgb(219, 219, 219);
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+  }

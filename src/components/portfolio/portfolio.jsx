@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import Card from "./sub-components/card";
+import Card from "../sub-components/card";
+import './portfolio.css'
 
 // document.getElementById("defaultOpen").click();
 // Get the element with id="defaultOpen" and click on it

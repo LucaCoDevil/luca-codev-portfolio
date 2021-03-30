@@ -1,4 +1,6 @@
 import React from "react";
+import './bio.css'
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faServer, faDatabase } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -8,7 +10,7 @@ import {
   faJsSquare,
   faReact
 } from "@fortawesome/free-brands-svg-icons";
-import image from "../images/p001c001.JPG";
+import image from "../../images/p001c001.JPG";
 
  const bio = () => {
   return (
