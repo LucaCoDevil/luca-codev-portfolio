@@ -3,15 +3,23 @@ import NavItem from "../sub-components/navigationItem";
 import "./navigation.css";
 import SliderButton from "../slideDrawer/slideDrawerButton";
 
-const navigation = () => {
+const navigation = (props) => {
   return (
     <nav id="navbar">
-      <SliderButton />
+      <SliderButton onClick={props.onToggleClick} />
       <ul className="item-list">
-        <NavItem name="Home" href="#landing-container" />
-        <NavItem name="My work" href="#portfolio-container" />
-        <NavItem name="Bio" href="#bio-container" />
-        <NavItem name="Contact" href="#contact-container" />
+        <NavItem className="nav-item" name="Home" href="#landing-container" />
+        <NavItem
+          className="nav-item"
+          name="My work"
+          href="#portfolio-container"
+        />
+        <NavItem className="nav-item" name="Bio" href="#bio-container" />
+        <NavItem
+          className="nav-item"
+          name="Contact"
+          href="#contact-container"
+        />
       </ul>
     </nav>
   );

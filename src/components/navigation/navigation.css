@@ -3,12 +3,12 @@
   flex-direction: row;
   align-items: center;
   position: sticky;
-  z-index: 1000;
+  z-index: 10;
   width: 100%;
   top: 0;
   padding: 0;
   margin: 0;
-  background-color: #465f70;
+  background-color: hsl(204, 23%, 36%);
 }
 
 .item-list {
@@ -26,7 +26,6 @@
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
 }
 
 .nav-item:hover {

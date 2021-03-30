@@ -3,11 +3,13 @@ import "./sliderDrawerButton.css";
 
 const toggleButton = (props) => {
   return (
-    <button className="button-toggle">
-      <div className="button-toggle_line"></div>
-      <div className="button-toggle_line"></div>
-      <div className="button-toggle_line"></div>
-    </button>
+    <div>
+      <button className="button-toggle" onClick={props.onClick}>
+        <div className="button-toggle_line"></div>
+        <div className="button-toggle_line"></div>
+        <div className="button-toggle_line"></div>
+      </button>
+    </div>
   );
 };
 
