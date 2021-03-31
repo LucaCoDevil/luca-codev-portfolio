@@ -73,22 +73,7 @@ function Portfolio() {
           {/* row of 4 columns */}
           <div className="row">
             {/* each column is a quarter of the parent  */}
-            <Card
-              srcURL="https://www.wethetalent.co/wp-content/uploads/2015/05/1400_700-Q8gA0YeaskPak6UY77BXMnrOA4WpMCCXVKdmRxyD6tfDafw50mYBah41r90C9Jww.jpg"
-              alt="Dev"
-            />
-            <Card
-              srcURL="https://res.cloudinary.com/practicaldev/image/fetch/s--wvB7F1QQ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/3840/1%2Ay3c9ggOkOzdAr8JC7TUrEQ%402x.png"
-              alt="Dev"
-            />
-            <Card
-              srcURL="https://www.wethetalent.co/wp-content/uploads/2015/05/1400_700-Q8gA0YeaskPak6UY77BXMnrOA4WpMCCXVKdmRxyD6tfDafw50mYBah41r90C9Jww.jpg"
-              alt="Dev"
-            />
-            <Card
-              srcURL="https://res.cloudinary.com/practicaldev/image/fetch/s--wvB7F1QQ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/3840/1%2Ay3c9ggOkOzdAr8JC7TUrEQ%402x.png"
-              alt="Dev"
-            />
+            <Card srcURL="../images/p001c001.JPG" alt="Dev" />
             <Card
               srcURL="https://res.cloudinary.com/practicaldev/image/fetch/s--wvB7F1QQ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/3840/1%2Ay3c9ggOkOzdAr8JC7TUrEQ%402x.png"
               alt="Dev"
