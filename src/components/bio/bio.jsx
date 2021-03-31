@@ -1,5 +1,5 @@
 import React from "react";
-import './bio.css'
+import "./bio.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faServer, faDatabase } from "@fortawesome/free-solid-svg-icons";
@@ -8,15 +8,15 @@ import {
   faNodeJs,
   faCss3Alt,
   faJsSquare,
-  faReact
+  faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import image from "../../images/p001c001.JPG";
 
- const bio = () => {
+const bio = () => {
   return (
     <div id="bio-container">
       <h2>Bio</h2>
-      <p className="description">some info about me </p>
+      {/* <p className="description">some info about me </p> */}
 
       <div id="info-container">
         <div id="left-bio">
@@ -30,9 +30,7 @@ import image from "../../images/p001c001.JPG";
                 risus eget ex tempor gravida at sed orci. Proin id turpis odio.
                 Vivamus fermentum tincidunt sem a porta. Donec accumsan pulvinar
                 odio, nec bibendum quam tincidunt sed.Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit. Sed id risus eget ex tempor
-                gravida at sed orci. Proin id turpis odio. Vivamus fermentum
-                tincidunt sem a porta.
+                amet, consectetur adipiscing elit.
               </p>
             </div>
             <button className="bio-btn">Learn more</button>

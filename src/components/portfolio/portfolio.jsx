@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import Card from "../sub-components/card";
-import './portfolio.css'
+import "./portfolio.css";
 
 // document.getElementById("defaultOpen").click();
 // Get the element with id="defaultOpen" and click on it
 
-function Portfolio(){
+function Portfolio() {
   useEffect(() => {
     document.getElementById("defaultOpen").click();
   });
@@ -36,7 +36,7 @@ function Portfolio(){
     <div id="portfolio-container">
       <h2>My work</h2>
       {/* description */}
-      <p className="description">A few of my favorite projects</p>
+      {/* <p className="description">A few of my favorite projects</p> */}
       {/* tab nav system */}
       <div id="container">
         {/* buttons for tab nav */}
@@ -120,6 +120,6 @@ function Portfolio(){
       </div>
     </div>
   );
-};
+}
 
 export default Portfolio;

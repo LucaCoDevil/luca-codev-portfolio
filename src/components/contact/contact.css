@@ -1,65 +1,72 @@
 #contact-container {
-    background-color: rgb(53, 53, 53);
-    height: 600px;
-    width: 100%;
-    margin: 0;
-  }
-  
-  .form-align {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  background-color: rgb(53, 53, 53);
+  height: 600px;
+  width: 100%;
+  margin: 0;
+}
+
+.form-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-controller {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(53, 53, 53);
+  width: 450px;
+}
+
+.input-controller {
+  background-color: rgba(44, 44, 44);
+  border: none;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 10px 5px;
+  color: #c7c7c7;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.input-controller::placeholder {
+  color: rgb(94, 94, 94);
+}
+
+.input-controller:focus {
+  outline: none;
+}
+
+.input-heading {
+  color: #c7c7c7;
+  margin-bottom: 5px;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  padding: 8px 20px;
+  color: rgb(240, 240, 240);
+  background-color: inherit;
+  border: 2px solid rgb(240, 240, 240);
+  font-weight: 400;
+}
+
+.submit-btn:hover {
+  background-color: #49454d;
+}
+
+.submit-btn:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 480px) {
   .form-controller {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(53, 53, 53);
-    width: 450px;
+    width: 95%;
   }
-  
-  .input-controller {
-    background-color: rgba(44, 44, 44);
-    border: none;
-    width: 100%;
-    margin-bottom: 5px;
-    padding: 10px 5px;
-    color: #c7c7c7;
-    font-size: 1rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-  }
-  
-  .input-controller::placeholder {
-    color: rgb(94, 94, 94);
-  }
-  
-  .input-controller:focus {
-    outline: none;
-  }
-  
-  .input-heading {
-    color: #c7c7c7;
-    margin-bottom: 5px;
-  }
-  
-  .submit-btn {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    padding: 8px 20px;
-    color: rgb(240, 240, 240);
-    background-color: inherit;
-    border: 2px solid rgb(240, 240, 240);
-    font-weight: 400;
-  }
-  
-  .submit-btn:hover {
-    background-color: #49454d;
-  }
-  
-  .submit-btn:focus {
-    outline: none;
-  }
+}

@@ -20,7 +20,6 @@ export default function App() {
     setSliderOpen(false);
   };
 
-  let sliderDrawer;
   let backdrop;
 
   if (sliderIsOpen) {
