@@ -15,7 +15,7 @@ import image from "../../images/p001c001.JPG";
 const bio = () => {
   return (
     <div id="bio-container">
-      <h2>Bio</h2>
+      <h2>BIO</h2>
       {/* <p className="description">some info about me </p> */}
 
       <div id="info-container">

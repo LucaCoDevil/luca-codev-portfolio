@@ -1,120 +1,118 @@
 #portfolio-container {
-    /* height: 950px; */
-    background-color: rgb(230, 230, 230);
-    width: 100%;
-    margin: 0;
-    padding-top: 30px;
-    padding-bottom: 150px;
-  }
-  
-  .tab {
-    display: flex;
-    justify-content: center;
-    margin: 50px 0;
-    background-color: inherit;
-  }
-  
-  /* Style the tab */
-  
-  /* Style the buttons inside the tab */
-  .tablinks {
-    display: inline;
-    background-color: inherit;
-    color: rgb(77, 77, 77);
-    padding: 15px 15px;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 1.1rem;
-    font-weight: 500;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tablinks:hover {
-    background-color: rgb(220, 220, 220);
-  }
-  
-  /* Create an active/current "tab button" class */
-  .tablinks.active {
-    background-color: rgb(210, 210, 210);
-    color: rgb(47, 82, 128);
-  }
-  
-  .tabcontent {
-    padding: 0px 12px;
-  }
-  
-  .row {
-    display: flex;
-    justify-content: center;
-    flex-flow: wrap;
-    width: 100%;
-  }
-  
-  .col {
-    margin: 0 2px;
-    margin-bottom: 4px;
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    background-color: rgb(170, 165, 165);
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-  }
-  
-  .col:hover {
-    /* width: 360px;
-    height: 360px; */
-    flex-grow: 0.2;
-  }
-  
-  .card-img {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.5s ease;
-  }
-  
-  .card-middle {
-    /* position: relative;
-    top: 0; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    transition: 0.5s ease;
-    opacity: 0;
-    text-align: center;
-    transform: translate(0%, -100%);
-  }
-  
-  .card-text {
-    position: relative;
-    background-color: rgb(60, 110, 113);
-    width: 50%;
-    color: white;
-    font-size: 16px;
-    padding: 20px 20px;
-    transform: translate(-30%, 0%);
-    transition: all 0.3s ease-out;
-  }
-  
-  .col:hover .card-img {
-    opacity: 0.3;
-  }
-  
-  .col:hover .card-middle {
-    opacity: 1;
-  }
-  
-  /* @keyframes slide {
+  /* height: 950px; */
+  background-color: rgb(224, 224, 224);
+  width: 100%;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 150px;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  background-color: inherit;
+}
+
+/* Style the tab */
+
+/* Style the buttons inside the tab */
+.tablinks {
+  display: inline;
+  background-color: inherit;
+  color: rgb(77, 77, 77);
+  padding: 15px 15px;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Change background color of buttons on hover */
+.tablinks:hover {
+  background-color: rgb(220, 220, 220);
+}
+
+/* Create an active/current "tab button" class */
+.tablinks.active {
+  background-color: rgb(210, 210, 210);
+  color: rgb(47, 82, 128);
+}
+
+.tabcontent {
+  padding: 0px 12px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  width: 100%;
+}
+
+.col {
+  margin: 0 2px;
+  margin-bottom: 4px;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  transform: scale(1);
+  background-color: rgb(41, 41, 41);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.col:hover {
+  transform: scale(95%);
+}
+
+.card-img {
+  opacity: 0.85;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.card-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  text-align: center;
+  transform: translate(0%, -100%);
+}
+
+.card-text {
+  position: relative;
+  background-color: rgb(60, 110, 113);
+  cursor: pointer;
+  width: 50%;
+  color: white;
+  font-size: 16px;
+  padding: 20px 20px;
+  transform: translate(-30%, 0%);
+  transition: all 0.3s ease-out;
+}
+
+.col:hover .card-img {
+  opacity: 0.5;
+}
+
+.col:hover .card-middle {
+  opacity: 1;
+}
+
+/* @keyframes slide {
     from {
       transform: translate(-25%, 0%);
     }
@@ -122,9 +120,21 @@
       transform: translate(0%, 0%);
     }
   } */
-  
-  .col:hover .card-text {
-    /* animation-name: slide;
+
+.col:hover .card-text {
+  /* animation-name: slide;
     animation-duration: 0.3s; */
-    transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+}
+
+@media screen and (max-width: 380px) {
+  .tabcontent {
+    width: 100%;
+    padding: 0;
   }
+
+  .col {
+    width: 100%;
+    margin: 0;
+  }
+}

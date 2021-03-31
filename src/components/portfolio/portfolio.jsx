@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
 import Card from "../sub-components/card";
 import "./portfolio.css";
-
-// document.getElementById("defaultOpen").click();
-// Get the element with id="defaultOpen" and click on it
+import keeper from "../../images/keeper.png";
+import DailyJournal from "../../images/dailyjournal.png";
+import SignUp from "../../images/signup.png";
 
 function Portfolio() {
   useEffect(() => {
     document.getElementById("defaultOpen").click();
   });
 
-  function openCity(evt, cityName) {
+  function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
 
@@ -18,9 +18,9 @@ function Portfolio() {
       tabcontent[i].style.display = "none";
     }
 
-    console.log(document.getElementById(cityName));
+    console.log(document.getElementById(tabName));
 
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
 
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
@@ -31,75 +31,79 @@ function Portfolio() {
   }
 
   return (
-    //container
-
     <div id="portfolio-container">
-      <h2>My work</h2>
-      {/* description */}
-      {/* <p className="description">A few of my favorite projects</p> */}
-      {/* tab nav system */}
+      <h2>PROJECTS</h2>
       <div id="container">
-        {/* buttons for tab nav */}
         <div className="tab">
           <button
             className="tablinks"
             onClick={(e) => {
-              openCity(e, "London");
+              openTab(e, "All");
             }}
             id="defaultOpen"
           >
-            London
+            ALL
           </button>
           <button
             className="tablinks"
             onClick={(e) => {
-              openCity(e, "Paris");
+              openTab(e, "Reactjs");
             }}
           >
-            Paris
+            REACT-JS
           </button>
           <button
             className="tablinks"
             onClick={(e) => {
-              openCity(e, "Tokyo");
+              openTab(e, "Javascript");
             }}
           >
-            Tokyo
+            JAVASCRIPT
           </button>
         </div>
 
-        {/* tab content */}
-        <div id="London" className="tabcontent">
-          {/* row of 4 columns */}
+        <div id="All" className="tabcontent">
           <div className="row">
-            {/* each column is a quarter of the parent  */}
-            <Card srcURL="../images/p001c001.JPG" alt="Dev" />
             <Card
-              srcURL="https://res.cloudinary.com/practicaldev/image/fetch/s--wvB7F1QQ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/3840/1%2Ay3c9ggOkOzdAr8JC7TUrEQ%402x.png"
+              imgURL={keeper}
+              projectURL="https://luca-codev-keeper.herokuapp.com/"
               alt="Dev"
             />
             <Card
-              srcURL="https://www.wethetalent.co/wp-content/uploads/2015/05/1400_700-Q8gA0YeaskPak6UY77BXMnrOA4WpMCCXVKdmRxyD6tfDafw50mYBah41r90C9Jww.jpg"
+              imgURL={DailyJournal}
+              projectURL="https://luca-codev-dailyjournal.herokuapp.com/"
+              alt="Dev"
+            />
+            <Card
+              imgURL={SignUp}
+              projectURL="https://lucacodev-emailform.herokuapp.com"
               alt="Dev"
             />
           </div>
         </div>
 
-        <div id="Paris" className="tabcontent">
-          {/* row of 4 columns */}
+        <div id="Reactjs" className="tabcontent">
           <div className="row">
-            {/* each column is a quarter of the parent  */}
-            <div className="col"></div>
-            <div className="col"></div>
-            <div className="col"></div>
+            <Card
+              imgURL={keeper}
+              projectURL="https://luca-codev-keeper.herokuapp.com/"
+              alt="Dev"
+            />
           </div>
         </div>
 
-        <div id="Tokyo" className="tabcontent">
-          {/* row of 4 columns */}
+        <div id="Javascript" className="tabcontent">
           <div className="row">
-            {/* each column is a quarter of the parent  */}
-            <div className="col"></div>
+            <Card
+              imgURL={DailyJournal}
+              projectURL="https://luca-codev-dailyjournal.herokuapp.com/"
+              alt="Dev"
+            />
+            <Card
+              imgURL={SignUp}
+              projectURL="https://lucacodev-emailform.herokuapp.com"
+              alt="Dev"
+            />
           </div>
         </div>
       </div>

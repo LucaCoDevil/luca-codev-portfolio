@@ -8,16 +8,16 @@ const navigation = (props) => {
     <nav id="navbar">
       <SliderButton onClick={props.onToggleClick} />
       <ul className="item-list">
-        <NavItem className="nav-item" name="Home" href="#landing-container" />
+        <NavItem className="nav-item" name="HOME" href="#landing-container" />
         <NavItem
           className="nav-item"
-          name="My work"
+          name="PORTFOLIO"
           href="#portfolio-container"
         />
-        <NavItem className="nav-item" name="Bio" href="#bio-container" />
+        <NavItem className="nav-item" name="BIO" href="#bio-container" />
         <NavItem
           className="nav-item"
-          name="Contact"
+          name="CONTACT"
           href="#contact-container"
         />
       </ul>
