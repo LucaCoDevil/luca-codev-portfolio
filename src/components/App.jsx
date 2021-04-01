@@ -28,8 +28,10 @@ export default function App() {
 
   return (
     <div className="App">
+      {/* <div className="landing-nav"> */}
       <Landing />
       <Nav onToggleClick={sliderClickHandler} />
+      {/* </div> */}
       <SlideDrawer show={sliderIsOpen} />
       {backdrop}
       <Portfolio />

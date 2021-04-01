@@ -14,6 +14,12 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.landing-nav {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 h2 {
   display: inline-block;
   margin-left: 3%;
