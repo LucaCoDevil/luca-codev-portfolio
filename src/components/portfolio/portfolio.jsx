@@ -6,6 +6,14 @@ import DailyJournal from "../../images/dailyjournal.png";
 import SignUp from "../../images/signup.png";
 
 function Portfolio() {
+  //project description variables
+  const keeperDesc =
+    "Keeper is a dynamically loaded note taking webApp built with the MERN stack technologies.";
+  const dailyJournalDesc =
+    "Daily Journal is a Blog based webApp where one can create and manage blog posts.";
+  const emailFormDesc =
+    "Email Form is a Mailchimp newsletter signup page used to add teh user to an email list";
+
   useEffect(() => {
     document.getElementById("defaultOpen").click();
   });
@@ -17,8 +25,6 @@ function Portfolio() {
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
-
-    console.log(document.getElementById(tabName));
 
     document.getElementById(tabName).style.display = "block";
 
@@ -67,17 +73,20 @@ function Portfolio() {
             <Card
               imgURL={keeper}
               projectURL="https://luca-codev-keeper.herokuapp.com/"
-              alt="Dev"
+              alt="Keeper project"
+              description={keeperDesc}
             />
             <Card
               imgURL={DailyJournal}
               projectURL="https://luca-codev-dailyjournal.herokuapp.com/"
-              alt="Dev"
+              alt="Daily Journal project"
+              description={dailyJournalDesc}
             />
             <Card
               imgURL={SignUp}
               projectURL="https://lucacodev-emailform.herokuapp.com"
-              alt="Dev"
+              alt="Email form project"
+              description={emailFormDesc}
             />
           </div>
         </div>
@@ -87,7 +96,8 @@ function Portfolio() {
             <Card
               imgURL={keeper}
               projectURL="https://luca-codev-keeper.herokuapp.com/"
-              alt="Dev"
+              alt="Keeper project"
+              description={keeperDesc}
             />
           </div>
         </div>
@@ -97,12 +107,14 @@ function Portfolio() {
             <Card
               imgURL={DailyJournal}
               projectURL="https://luca-codev-dailyjournal.herokuapp.com/"
-              alt="Dev"
+              alt="Daily Journal project"
+              description={dailyJournalDesc}
             />
             <Card
               imgURL={SignUp}
               projectURL="https://lucacodev-emailform.herokuapp.com"
-              alt="Dev"
+              alt="Email form project"
+              description={emailFormDesc}
             />
           </div>
         </div>

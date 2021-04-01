@@ -4,9 +4,9 @@ import "./landing.css";
 const landingPage = () => {
   return (
     <div>
-      <div class="clip01"></div>
+      <div className="clip01"></div>
 
-      <div class="clip02"></div>
+      <div className="clip02"></div>
 
       <div id="landing-container">
         <h1 className="main-header">Luca Codevilla</h1>
