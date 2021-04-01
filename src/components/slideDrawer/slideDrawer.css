@@ -1,7 +1,9 @@
 .slide-drawer {
   position: fixed;
+  flex-direction: column;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
   top: 0;
   left: 0;
@@ -21,6 +23,21 @@
 .mobile-nav {
   padding-left: 0;
   width: 100%;
+  margin: 0;
+}
+
+.mobile-container_icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 60px;
+}
+
+.mobile-icons {
+  margin: 0 15px;
+  font-size: 1.8rem;
+  color: rgb(219, 219, 219);
 }
 
 .mobile-link {
@@ -47,7 +64,7 @@
   font-weight: 400;
 }
 
-@media screen and (min-width: 511px) {
+@media screen and (min-width: 769px) {
   .slide-drawer {
     display: none;
   }

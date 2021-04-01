@@ -22,7 +22,8 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: rgb(28, 38, 46);
+
+  background-color: #353535;
   width: 100%;
   z-index: 100;
 }

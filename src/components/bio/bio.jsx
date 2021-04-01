@@ -26,14 +26,20 @@ const bio = () => {
             <div className="left-text">
               <h3>Who am I? </h3>
               <p className="bio-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id
-                risus eget ex tempor gravida at sed orci. Proin id turpis odio.
-                Vivamus fermentum tincidunt sem a porta. Donec accumsan pulvinar
-                odio, nec bibendum quam tincidunt sed.Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
+                I’m a full-stack web developer, primarily focusing on the MERN
+                (MongoDB, ExpressJS ReactJS, NodeJS) stack. I enjoy creating
+                easily used, fluid webApps while incorporating a fully
+                functional back-end component. I also have a hard driven passion
+                for writing dynamically loaded, efficient code that allows for
+                an enjoyable user experience.
               </p>
             </div>
-            <button className="bio-btn">Learn more</button>
+            <a
+              className="bio-btn"
+              href="https://www.linkedin.com/in/luca-codevilla-3b379419a/"
+            >
+              Learn more!
+            </a>
           </div>
         </div>
         <div id="right-bio">

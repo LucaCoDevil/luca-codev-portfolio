@@ -40,28 +40,34 @@
   font-size: 1.1rem;
   font-weight: 300;
   color: rgb(70, 70, 70);
-  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 1.4;
 }
 
 .bio-btn {
   width: 112px;
+  text-align: center;
   margin: 25px 10%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 10px;
-  color: rgb(34, 34, 34);
+  color: #3d3d3d;
   background-color: inherit;
-  border: 2px solid rgb(80, 80, 80);
+  border: 2px solid #494949;
+  transition: all 0.3s ease-out;
+  font-weight: 500;
 }
 
 .bio-btn:hover {
-  border: 2px solid rgb(119, 119, 119);
-  color: rgb(77, 77, 77);
+  color: rgb(200, 200, 200);
+  border-color: #476071;
+  background-color: #476071;
   cursor: pointer;
 }
 
-.bio-btn:focus {
-  border: 2px solid rgb(80, 80, 80);
-  background-color: rgb(131, 131, 131);
+.bio-btn:focus .bio-btn:active {
+  color: rgb(200, 200, 200);
+  border-color: #476071;
+  background-color: #476071;
   outline: none;
 }
 
@@ -91,12 +97,44 @@
 .skill-icon {
   margin: 10px 20px;
   font-size: 40px;
-  color: rgb(71, 71, 71);
-  transition: all 0.7s ease-out;
+  color: rgb(80, 80, 80);
+  transition: all 0.3s ease-out;
 }
 
 .skill-icon:hover {
-  transform: rotateZ(360deg);
+  transform: scale(1.4);
+}
+
+.skill-icon:nth-child(1):hover {
+  color: rgb(228, 77, 38);
+}
+
+.skill-icon:nth-child(2):hover {
+  color: rgb(34, 174, 90);
+}
+
+.skill-icon:nth-child(3):hover {
+  color: rgb(37, 75, 221);
+}
+
+.skill-icon:nth-child(4):hover {
+  color: rgb(207, 182, 40);
+}
+
+.skill-icon:nth-child(5):hover {
+  color: rgb(94, 105, 162);
+}
+
+.skill-icon:nth-child(6):hover {
+  border-radius: 50%;
+  color: rgb(61, 61, 61);
+  background-color: rgb(38, 88, 134);
+}
+
+.skill-icon:nth-child(7):hover {
+  color: rgb(79, 180, 207);
+  /* background-color: rgb(58, 58, 58);
+  border-radius: 50%; */
 }
 
 @media only screen and (max-width: 1100px) {
@@ -111,11 +149,6 @@
     padding-bottom: 30px;
   }
 
-  /* .left-text h3 {
-      width: 260px;
-      text-align: center;
-    } */
-
   #right-bio {
     padding-top: 20px;
   }
@@ -128,21 +161,6 @@
   .center-icon {
     display: inline-flex;
   }
-
-  /* #inner-rb ul {
-      list-style-type: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  
-    #inner-rb ul li {
-      display: inline;
-      margin: 10px 10px;
-      background-color: lightblue;
-      border-radius: 15px;
-      padding: 5px 10px;
-    } */
 }
 
 @media only screen and (max-width: 850px) {

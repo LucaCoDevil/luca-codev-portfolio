@@ -12,7 +12,7 @@ function Portfolio() {
   const dailyJournalDesc =
     "Daily Journal is a Blog based webApp where one can create and manage blog posts.";
   const emailFormDesc =
-    "Email Form is a Mailchimp newsletter signup page used to add teh user to an email list";
+    "Email Form is a Mailchimp newsletter sign up page used to add the user to an email list.";
 
   useEffect(() => {
     document.getElementById("defaultOpen").click();

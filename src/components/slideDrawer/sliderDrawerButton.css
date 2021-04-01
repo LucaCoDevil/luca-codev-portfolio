@@ -23,7 +23,7 @@
   padding: 0;
 }
 
-@media screen and (min-width: 511px) {
+@media screen and (min-width: 769px) {
   .button-toggle {
     display: none;
   }

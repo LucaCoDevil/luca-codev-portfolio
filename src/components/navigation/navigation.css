@@ -17,10 +17,20 @@
   margin: 0;
 }
 
+.nav-container_icon {
+  padding: 0 30px;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+  color: rgb(219, 219, 219);
+  margin: 0 10px;
+}
+
 .nav-item {
   text-decoration: none;
   display: inline-flex;
-  width: 80px;
+  width: auto;
   padding: 10px 3%;
   transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
@@ -34,15 +44,20 @@
 }
 
 .nav-item a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
   color: rgb(219, 219, 219);
   text-align: center;
   margin: 0 auto;
   font-weight: 400;
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 768px) {
   .item-list {
+    display: none;
+  }
+
+  .nav-container_icon {
     display: none;
   }
 

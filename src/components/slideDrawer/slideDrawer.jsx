@@ -1,6 +1,7 @@
 import React from "react";
 import "./slideDrawer.css";
 import NavItem from "../sub-components/navigationItem";
+import Media from "../mediaLinks/mediaLinks";
 
 const slideDrawer = (props) => {
   let addOpen = "slide-drawer";
@@ -29,6 +30,7 @@ const slideDrawer = (props) => {
           href="#contact-container"
         />
       </ul>
+      <Media containerStyle="mobile-container_icon" styleIcon="mobile-icons" />
     </nav>
   );
 };

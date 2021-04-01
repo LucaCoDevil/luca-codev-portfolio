@@ -2,6 +2,7 @@ import React from "react";
 import NavItem from "../sub-components/navigationItem";
 import "./navigation.css";
 import SliderButton from "../slideDrawer/slideDrawerButton";
+import Media from "../mediaLinks/mediaLinks";
 
 const navigation = (props) => {
   return (
@@ -21,6 +22,7 @@ const navigation = (props) => {
           href="#contact-container"
         />
       </ul>
+      <Media containerStyle="nav-container_icon" styleIcon="nav-icon" />
     </nav>
   );
 };
