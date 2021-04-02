@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import "./landing.css";
+import Nav from "../navigation/navigation";
 
-const landingPage = () => {
+const LandingPage = (props) => {
+  // const navbar = document.get("blah");
+
+  const refer = useRef();
+
+  // const checkScroll = () => {
+  //   console.log(refer.getBoundingClientRect().width);
+  // };
+
+  // window.addEventListener("scroll", checkScroll);
+
   return (
     <div>
       <div className="clip01"></div>
@@ -13,8 +24,9 @@ const landingPage = () => {
         <h4 className="main-description">Full-stack web developer</h4>
         {/* <button id="cta-btn">CTA</button> */}
       </div>
+      <Nav parentRef={refer} id="blah" onToggleClick={props.handleClick} />
     </div>
   );
 };
 
-export default landingPage;
+export default LandingPage;

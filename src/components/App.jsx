@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Nav from "./navigation/navigation";
 import Landing from "./landing/landingPage";
 import Portfolio from "./portfolio/portfolio";
 import Bio from "./bio/bio";
@@ -29,8 +28,7 @@ export default function App() {
   return (
     <div className="App">
       {/* <div className="landing-nav"> */}
-      <Landing />
-      <Nav onToggleClick={sliderClickHandler} />
+      <Landing handleClick={sliderClickHandler} />
       {/* </div> */}
       <SlideDrawer show={sliderIsOpen} />
       {backdrop}

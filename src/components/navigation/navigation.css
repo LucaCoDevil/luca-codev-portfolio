@@ -2,13 +2,21 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: sticky;
-  z-index: 10;
+  position: absolute;
+  z-index: 1000000;
   width: 100%;
-  top: 0;
+  bottom: 0;
   padding: 0;
   margin: 0;
-  background-color: hsl(204, 23%, 36%);
+  background-color: transparent;
+  /* hsl(204, 23%, 36%) */
+}
+
+.blah {
+  background-color: #335f7c !important;
+  position: fixed !important;
+  top: 0;
+  bottom: auto !important;
 }
 
 .item-list {

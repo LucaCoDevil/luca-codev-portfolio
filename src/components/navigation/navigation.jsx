@@ -1,12 +1,25 @@
-import React from "react";
+import { React, useState } from "react";
 import NavItem from "../sub-components/navigationItem";
 import "./navigation.css";
 import SliderButton from "../slideDrawer/slideDrawerButton";
 import Media from "../mediaLinks/mediaLinks";
 
-const navigation = (props) => {
+const Navigation = (props) => {
+  //ADD STATE TO CONTROL STYLING OF NAVBAR BASED ON POSITION
+
+  let getPosition = (el) => {
+    const position0 = (window.pageYOffset = 0);
+    window.addEventListener("scroll", () => {
+      let navbarPosition = el.getBoundingClientRect().y;
+      if (navbarPosition <= 0) {
+        console.log("reached");
+        document.getElementById("navbar").classList.add("blah");
+      }
+    });
+  };
+
   return (
-    <nav id="navbar">
+    <nav ref={getPosition} id="navbar">
       <SliderButton onClick={props.onToggleClick} />
       <ul className="item-list">
         <NavItem className="nav-item" name="HOME" href="#landing-container" />
@@ -27,4 +40,4 @@ const navigation = (props) => {
   );
 };
 
-export default navigation;
+export default Navigation;
