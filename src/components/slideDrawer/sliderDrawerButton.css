@@ -1,10 +1,29 @@
+.button-container{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 10000000;
+height: 50px;
+width: 50px;
+margin: 20px;
+padding: 5px;
+}
+
+.fixed{
+  background-color: #335f7c;
+  border-radius: 50%;
+}
+
 .button-toggle {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 30px;
   width: 40px;
-  margin: 0 1rem;
+  margin: 0 ;
   padding: 0;
   background-color: inherit;
   border: none;
@@ -24,7 +43,7 @@
 }
 
 @media screen and (min-width: 769px) {
-  .button-toggle {
+  .button-container {
     display: none;
   }
 }

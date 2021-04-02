@@ -9,6 +9,8 @@ import Backdrop from "./backdrop/backdrop";
 export default function App() {
   const [sliderIsOpen, setSliderOpen] = useState(false);
 
+
+
   const sliderClickHandler = () => {
     setSliderOpen((prev) => {
       return !sliderIsOpen;
@@ -29,6 +31,7 @@ export default function App() {
     <div className="App">
       {/* <div className="landing-nav"> */}
       <Landing handleClick={sliderClickHandler} />
+      
       {/* </div> */}
       <SlideDrawer show={sliderIsOpen} />
       {backdrop}

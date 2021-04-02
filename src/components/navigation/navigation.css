@@ -70,6 +70,6 @@
   }
 
   #navbar {
-    height: 43px;
+    display: none;
   }
 }

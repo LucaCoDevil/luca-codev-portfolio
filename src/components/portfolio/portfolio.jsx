@@ -38,7 +38,7 @@ function Portfolio() {
 
   return (
     <div id="portfolio-container">
-      <h2>PROJECTS</h2>
+      <h2>PORTFOLIO</h2>
       <div id="container">
         <div className="tab">
           <button

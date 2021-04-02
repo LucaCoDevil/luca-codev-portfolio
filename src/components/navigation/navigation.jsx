@@ -1,26 +1,35 @@
-import { React, useState } from "react";
+import { React, useEffect} from "react";
 import NavItem from "../sub-components/navigationItem";
 import "./navigation.css";
-import SliderButton from "../slideDrawer/slideDrawerButton";
+// import SliderButton from "../slideDrawer/slideDrawerButton";
 import Media from "../mediaLinks/mediaLinks";
 
 const Navigation = (props) => {
   //ADD STATE TO CONTROL STYLING OF NAVBAR BASED ON POSITION
+  
 
-  let getPosition = (el) => {
-    const position0 = (window.pageYOffset = 0);
+
+  useEffect(()=>{
+    const el = document.getElementById("navbar")
+    const positionOrigin = el.getBoundingClientRect().y;
     window.addEventListener("scroll", () => {
-      let navbarPosition = el.getBoundingClientRect().y;
-      if (navbarPosition <= 0) {
-        console.log("reached");
+      let navbarPosition = el.getBoundingClientRect();
+      if (navbarPosition.y <= 0) {
+        
         document.getElementById("navbar").classList.add("blah");
       }
+      if(window.pageYOffset <= positionOrigin){
+        
+        document.getElementById("navbar").classList.remove("blah");
+      }
     });
-  };
+  })
 
   return (
-    <nav ref={getPosition} id="navbar">
-      <SliderButton onClick={props.onToggleClick} />
+    
+
+    <nav id="navbar">
+      {/* <SliderButton onClick={props.onToggleClick} /> */}
       <ul className="item-list">
         <NavItem className="nav-item" name="HOME" href="#landing-container" />
         <NavItem
@@ -37,6 +46,7 @@ const Navigation = (props) => {
       </ul>
       <Media containerStyle="nav-container_icon" styleIcon="nav-icon" />
     </nav>
+ 
   );
 };
 

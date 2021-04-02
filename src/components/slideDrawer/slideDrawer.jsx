@@ -12,6 +12,7 @@ const slideDrawer = (props) => {
 
   return (
     <nav className={addOpen}>
+      <div></div>
       <ul className="mobile-nav">
         <NavItem
           className="mobile-link"
