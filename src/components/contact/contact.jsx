@@ -4,9 +4,9 @@ import "./contact.css";
 
 const contact = () => {
   const {
-    REACT_APP_SERVICE_ID,
-    REACT_APP_TEMPLATE_ID,
-    REACT_APP_USER_ID,
+    SERVICE_ID,
+    TEMPLATE_ID,
+    USER_ID,
   } = process.env;
 
   function sendEmail(e) {
@@ -14,10 +14,10 @@ const contact = () => {
 
     emailjs
       .sendForm(
-        REACT_APP_SERVICE_ID,
-        REACT_APP_TEMPLATE_ID,
+        SERVICE_ID,
+        TEMPLATE_ID,
         e.target,
-        REACT_APP_USER_ID
+        USER_ID
       )
       .then(
         (result) => {
@@ -50,6 +50,7 @@ const contact = () => {
           <textarea
             cols="50"
             className="input-controller"
+            style={{resize: "none"}}
             placeholder="Message"
             rows="8"
             name="message"
