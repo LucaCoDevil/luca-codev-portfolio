@@ -16,8 +16,8 @@ const contact = () => {
       .sendForm(
         REACT_APP_SERVICE_ID,
         REACT_APP_TEMPLATE_ID,
-        REACT_APP_USER_ID,
-        e.target
+        e.target,
+        REACT_APP_USER_ID
       )
       .then(
         (result) => {
