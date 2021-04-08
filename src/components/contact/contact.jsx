@@ -4,9 +4,9 @@ import "./contact.css";
 
 const contact = () => {
   const {
-    SERVICE_ID,
-    TEMPLATE_ID,
-    USER_ID,
+    REACT_APP_SERVICE_ID,
+    REACT_APP_TEMPLATE_ID,
+    REACT_APP_USER_ID,
   } = process.env;
 
   function sendEmail(e) {
@@ -14,10 +14,10 @@ const contact = () => {
 
     emailjs
       .sendForm(
-        SERVICE_ID,
-        TEMPLATE_ID,
+        REACT_APP_SERVICE_ID,
+        REACT_APP_TEMPLATE_ID,
         e.target,
-        USER_ID
+        REACT_APP_USER_ID
       )
       .then(
         (result) => {
