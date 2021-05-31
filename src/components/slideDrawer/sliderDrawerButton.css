@@ -1,4 +1,4 @@
-.button-container{
+.button-container {
   position: fixed;
   display: flex;
   align-items: center;
@@ -6,24 +6,34 @@
   top: 0;
   left: 0;
   z-index: 10000000;
-height: 50px;
-width: 50px;
-margin: 20px;
-padding: 5px;
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+  padding: 5px;
 }
 
-.fixed{
-  background-color: #335f7c;
+.fixed {
   border-radius: 50%;
+  animation: colorfade 0.5s;
+  background-color: #335f7c;
+}
+
+@keyframes colorfade {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: #335f7c;
+  }
 }
 
 .button-toggle {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 30px;
-  width: 40px;
-  margin: 0 ;
+  height: 25px;
+  width: 30px;
+  margin: 0;
   padding: 0;
   background-color: inherit;
   border: none;
@@ -36,7 +46,7 @@ padding: 5px;
 }
 
 .button-toggle_line {
-  width: 40px;
+  width: 30px;
   height: 2px;
   background-color: white;
   padding: 0;

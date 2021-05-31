@@ -29,6 +29,8 @@
 
 #portrait-img {
   height: 330px;
+  object-fit: cover;
+  background-color: inherit;
 }
 
 .left-text {
@@ -172,8 +174,6 @@
   #portrait-img {
     width: 150px;
     height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
     margin: 0 auto 30px auto;
   }
 

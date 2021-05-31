@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import "./bio.css";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faServer, faDatabase } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -11,8 +10,18 @@ import {
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import image from "../../images/p001c001.JPG";
+import circleImg from "../../images/cirlceProfilePic.png";
 
-const bio = () => {
+const Bio = () => {
+  const [isSmall, setIsSmall] = useState(false);
+  window.addEventListener("resize", () => {
+    if (window.innerWidth <= 850) {
+      setIsSmall(true);
+    } else {
+      setIsSmall(false);
+    }
+  });
+
   return (
     <div id="bio-container">
       <h2>BIO</h2>
@@ -20,7 +29,11 @@ const bio = () => {
 
       <div id="info-container">
         <div id="left-bio">
-          <img id="portrait-img" src={image} alt="Portrait" />
+          <img
+            id="portrait-img"
+            src={isSmall ? circleImg : image}
+            alt="Portrait"
+          />
 
           <div className="wrapper">
             <div className="left-text">
@@ -70,4 +83,4 @@ const bio = () => {
   );
 };
 
-export default bio;
+export default Bio;
