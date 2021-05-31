@@ -4,6 +4,7 @@ import "./portfolio.css";
 import keeper from "../../images/keeper.png";
 import DailyJournal from "../../images/dailyjournal.png";
 import SignUp from "../../images/signup.png";
+import subsearch from "../../images/subsearch.png";
 
 function Portfolio() {
   //project description variables
@@ -13,11 +14,13 @@ function Portfolio() {
     "Daily Journal is a Blog based webApp where one can create and manage blog posts.";
   const emailFormDesc =
     "Email Form is a Mailchimp newsletter sign up page used to add the user to an email list.";
-
+  const subsearchDesc =
+    "SubSearch is a subreddit search engine that allows one to view the most popular posts in a subreddit";
   useEffect(() => {
     document.getElementById("defaultOpen").click();
   });
 
+  //change tab
   function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -40,6 +43,7 @@ function Portfolio() {
     <div id="portfolio-container">
       <h2>PORTFOLIO</h2>
       <div id="container">
+        {/* portfolio nav */}
         <div className="tab">
           <button
             className="tablinks"
@@ -67,7 +71,8 @@ function Portfolio() {
             JAVASCRIPT
           </button>
         </div>
-
+        {/* portfolio content */}
+        {/* all */}
         <div id="All" className="tabcontent">
           <div className="row">
             <Card
@@ -88,9 +93,15 @@ function Portfolio() {
               alt="Email form project"
               description={emailFormDesc}
             />
+            <Card
+              imgURL={subsearch}
+              projectURL="https://lucacodev-subsearch.netlify.app/"
+              alt="subreddit search engine"
+              description={subsearchDesc}
+            />
           </div>
         </div>
-
+        {/* react */}
         <div id="Reactjs" className="tabcontent">
           <div className="row">
             <Card
@@ -101,7 +112,7 @@ function Portfolio() {
             />
           </div>
         </div>
-
+        {/* javascript */}
         <div id="Javascript" className="tabcontent">
           <div className="row">
             <Card
