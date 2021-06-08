@@ -110,6 +110,12 @@ function Portfolio() {
               alt="Keeper project"
               description={keeperDesc}
             />
+            <Card
+              imgURL={subsearch}
+              projectURL="https://lucacodev-subsearch.netlify.app/"
+              alt="subreddit search engine"
+              description={subsearchDesc}
+            />
           </div>
         </div>
         {/* javascript */}
