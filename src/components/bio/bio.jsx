@@ -39,12 +39,11 @@ const Bio = () => {
             <div className="left-text">
               <h3>Who am I? </h3>
               <p className="bio-description">
-                I’m a full-stack web developer, primarily focusing on the MERN
-                (MongoDB, ExpressJS, ReactJS, NodeJS) stack. I enjoy creating
-                easily used, fluid webApps while incorporating a fully
-                functional back-end component. I also have a hard driven passion
-                for writing dynamically loaded, efficient code that allows for
-                an enjoyable user experience.
+                I’m a web developer who enjoys creating easily used, fluid
+                webApps while incorporating a fully functional back-end
+                component. I also have a hard driven passion for writing
+                dynamically loaded, efficient code that allows for an enjoyable
+                user experience.
               </p>
             </div>
             <a
