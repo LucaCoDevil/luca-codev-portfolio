@@ -4,7 +4,7 @@ import "./portfolio.css";
 import keeper from "../../images/keeper.png";
 import DailyJournal from "../../images/dailyjournal.png";
 import SignUp from "../../images/signup.png";
-import subsearch from "../../images/subsearch.png";
+// import subsearch from "../../images/subsearch.png";
 
 function Portfolio() {
   //project description variables
@@ -14,8 +14,8 @@ function Portfolio() {
     "Daily Journal is a Blog based webApp where one can create and manage blog posts.";
   const emailFormDesc =
     "Email Form is a Mailchimp newsletter sign up page used to add the user to an email list.";
-  const subsearchDesc =
-    "SubSearch is a subreddit search engine that allows one to view the most popular posts in a subreddit";
+  // const subsearchDesc =
+  //   "SubSearch is a subreddit search engine that allows one to view the most popular posts in a subreddit";
   useEffect(() => {
     document.getElementById("defaultOpen").click();
   });
@@ -93,12 +93,12 @@ function Portfolio() {
               alt="Email form project"
               description={emailFormDesc}
             />
-            <Card
+            {/* <Card
               imgURL={subsearch}
               projectURL="https://lucacodev-subsearch.netlify.app/"
               alt="subreddit search engine"
               description={subsearchDesc}
-            />
+            /> */}
           </div>
         </div>
         {/* react */}
@@ -110,12 +110,12 @@ function Portfolio() {
               alt="Keeper project"
               description={keeperDesc}
             />
-            <Card
+            {/* <Card
               imgURL={subsearch}
               projectURL="https://lucacodev-subsearch.netlify.app/"
               alt="subreddit search engine"
               description={subsearchDesc}
-            />
+            /> */}
           </div>
         </div>
         {/* javascript */}
